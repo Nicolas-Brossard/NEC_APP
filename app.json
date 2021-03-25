@@ -1,0 +1,12 @@
+{
+  "name": "NEC_APP",
+  "displayName": "NEC_APP",
+  "expo": {
+    "name": "NEC_APP",
+    "slug": "NEC_APP",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
