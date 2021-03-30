@@ -19,6 +19,7 @@ const customLabelStyle = {
 const customColor = {
   'position': 'relative',
   'bottom': '0',
+  'margin': 'auto',
 };
 
 const textStyle = {
