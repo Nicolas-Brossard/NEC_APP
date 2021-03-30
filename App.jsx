@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import Logo from './Components/LogoComponent';
 import LoginLayout from './Layouts/LoginLayout';
 import NewAccountLayout from './Layouts/NewAccountLayout';
+import ExplanationLayout from './Layouts/ExplanationLayout';
 
 const styles = StyleSheet.create({
   container: {
@@ -19,7 +20,8 @@ export default function App() {
       <Logo />
       <View style={styles.container}>
         {/* <LoginLayout /> */}
-        <NewAccountLayout />
+        {/* <NewAccountLayout /> */}
+        <ExplanationLayout />
       </View>
     </>
   );
