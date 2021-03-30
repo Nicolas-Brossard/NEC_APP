@@ -2,19 +2,15 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import Label from '../../Components/LabelComponent';
 import { QUESTION_TITLE } from './messages';
-import CustomTextarea from '../../Components/CustomTextareaComponent';
+import CustomButton from '../../Components/CustomButtonComponent';
 import CustomTextInput from '../../Components/CustomTextInputComponent';
 
 const getInputValue = (name, value) => {
   console.log(name, value);
 };
 
-const getTextareaValue = (name, value) => {
-  console.log(name, value);
-};
-
-const input = { name: 'answer', placeholder: 'Objet de la demande' };
-const icon = { name: 'sc-telegram', type: 'evilicon', color: '#000' };
+const textInput = { name: 'question', placeholder: 'Objet' };
+const textArea = { name: 'answer', placeholder: 'Description' };
 
 const customLabelStyle = {
   'textAlign': 'center',
@@ -27,15 +23,17 @@ const HelpContainer = () => {
       <View>
         <CustomTextInput
           getInputValue={getInputValue}
-          name={input.name}
-          placeholder={input.placeholder}
-          iconName={icon.name}
-          iconType={icon.type}
-          iconColor={icon.color}
+          name={textInput.name}
+          placeholder={textInput.placeholder}
         />
-        <CustomTextarea
-          getInputValue={getTextareaValue}
+        <CustomTextInput
+          getInputValue={getInputValue}
+          name={textArea.name}
+          placeholder={textArea.placeholder}
+          textarea={true}
+          lines={10}
         />
+        <CustomButton title="Envoyer" />
       </View>
     </View>
   );
