@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Logo from './Components/LogoComponent';
 import LoginLayout from './Layouts/LoginLayout';
+import HelpLayout from './Layouts/HelpLayout';
 import NewAccountLayout from './Layouts/NewAccountLayout';
 import ExplanationLayout from './Layouts/ExplanationLayout';
 
@@ -21,7 +22,8 @@ export default function App() {
       <View style={styles.container}>
         {/* <LoginLayout /> */}
         {/* <NewAccountLayout /> */}
-        <ExplanationLayout />
+        {/* <ExplanationLayout /> */}
+        <HelpLayout />
       </View>
     </>
   );

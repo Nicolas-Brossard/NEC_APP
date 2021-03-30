@@ -9,6 +9,8 @@ const CustomTextInput = ({
   iconName,
   iconType,
   iconColor,
+  textarea = false,
+  lines = 1,
 }) => {
   return (
     <View style={styles.container}>
@@ -17,6 +19,8 @@ const CustomTextInput = ({
         inlineImageLeft="username"
         onChangeText={(value) => getInputValue(name, value)}
         placeholder={placeholder}
+        multiline={textarea}
+        numberOfLines={lines}
       />
       {iconName !== null && (
         <Icon name={iconName} type={iconType} color={iconColor} />
@@ -45,8 +49,8 @@ const styles = StyleSheet.create({
     elevation: 8,
   },
   textInput: {
-    width: '80%',
-    padding: 12,
+    width: '100%',
+    padding: 8,
     fontSize: 18,
   },
 });
