@@ -16,6 +16,15 @@ const customLabelStyle = {
   'textAlign': 'center',
 }
 
+const customColor = {
+  'position': 'relative',
+  'bottom': '0',
+};
+
+const textStyle = {
+  'fontSize': '12px',
+}
+
 const HelpContainer = () => {
   return (
     <View style={styles.container}>
@@ -33,7 +42,7 @@ const HelpContainer = () => {
           textarea={true}
           lines={10}
         />
-        <CustomButton title="Envoyer" />
+        <CustomButton customStyle={customColor} textStyle={textStyle} title="Envoyer" />
       </View>
     </View>
   );
