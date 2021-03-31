@@ -5,6 +5,7 @@ import LoginLayout from './Layouts/LoginLayout';
 import HelpLayout from './Layouts/HelpLayout';
 import NewAccountLayout from './Layouts/NewAccountLayout';
 import ExplanationLayout from './Layouts/ExplanationLayout';
+import MapLayout from './Layouts/MapLayout';
 
 const styles = StyleSheet.create({
   container: {
@@ -23,7 +24,8 @@ export default function App() {
         {/* <LoginLayout /> */}
         {/* <NewAccountLayout /> */}
         {/* <ExplanationLayout /> */}
-        <HelpLayout />
+        {/* <HelpLayout /> */}
+        <MapLayout />
       </View>
     </>
   );
